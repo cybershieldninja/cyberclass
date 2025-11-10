@@ -27,7 +27,7 @@ Exercise 1 — Recon (nmap)
 
     Prompt to students: “From the attacker container, list active hosts and the top 20 TCP ports for the DVWA container. What ports are open and which services might be running?”
 
-    Hints: nmap -sC -sV dvwa or nmap -p- dvwa. Ask them to interpret service banners.
+    <!-- Hints: nmap -sC -sV dvwa or nmap -p- dvwa. Ask them to interpret service banners. -->
 
 Exercise 2 — Web content discovery (gobuster)
 
@@ -35,7 +35,7 @@ Exercise 2 — Web content discovery (gobuster)
 
     Prompt: “Use gobuster or nikto to find likely attack surfaces (login pages, upload endpoints).”
 
-    Starter hint: gobuster dir -u http://dvwa/ -w /usr/share/wordlists/dirb/common.txt (students may need to install /point to a wordlist).
+    <!-- Starter hint: gobuster dir -u http://dvwa/ -w /usr/share/wordlists/dirb/common.txt (students may need to install /point to a wordlist). -->
 
 Exercise 3 — SQL Injection (DVWA low)
 
@@ -43,7 +43,7 @@ Exercise 3 — SQL Injection (DVWA low)
 
     Prompt: “Use the DVWA SQL injection page. Try to extract a known username or confirm vulnerability using sqlmap or manual payloads.”
 
-    Hints: Change DVWA security to low (within app). Use sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --dbs --batch.
+    <!-- Hints: Change DVWA security to low (within app). Use sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --dbs --batch. -->
 
 Exercise 4 — XSS (stored/reflected)
 
@@ -51,7 +51,7 @@ Exercise 4 — XSS (stored/reflected)
 
     Prompt: “Find a form or parameter that echoes input into the page. Can you craft a simple <script>alert(1)</script> payload that executes?”
 
-    Hints: Use browser devtools or curl to submit payloads from attacker container’s curl.
+    <!-- Hints: Use browser devtools or curl to submit payloads from attacker container’s curl. -->
 
 Exercise 5 — Password cracking (john)
 
@@ -59,7 +59,7 @@ Exercise 5 — Password cracking (john)
 
     Prompt: “One of the web apps stores password hashes. Extract a sample hash (provided in class) and use john to attempt cracking with a small wordlist.”
 
-    Hints: john --wordlist=/usr/share/wordlists/rockyou.txt hashfile.
+    <!-- Hints: john --wordlist=/usr/share/wordlists/rockyou.txt hashfile. -->
 
 For each exercise, require students to write a one-paragraph findings report and a step-by-step log of commands they ran. That reinforces learning.
 
