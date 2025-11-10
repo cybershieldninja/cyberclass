@@ -1,4 +1,4 @@
-# 🧪 Cyber Security Lab Environment
+# 🧪 Cyber Security Lab Exercise
 
 This project sets up a lightweight, containerized cyber security lab using Docker Compose.
 
@@ -21,6 +21,17 @@ All containers are connected to a custom Docker bridge network called `cyber-lab
         or
     podman network ls
 ```
+
+---
+
+## Pre‑lab checklist (student must confirm)
+
+    [ ] I have read & accepted the Safety & Acceptable‑Use Guidelines.
+
+---
+
+# - [Exercise 01](Exercise01.md) 
+
 
 ---
 
