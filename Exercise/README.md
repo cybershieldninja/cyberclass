@@ -26,7 +26,9 @@ All containers are connected to a custom Docker bridge network called `cyber-lab
 
 ## Pre‑lab checklist (student must confirm)
 
-    [ ] I have read & accepted the Safety & Acceptable‑Use Guidelines.
+<label><input type="checkbox" id="task1"> I have read & accepted the Safety & Acceptable‑Use Guidelines. </lable>
+
+<label><input type="checkbox" id="task2"> I will only target dvwa and juice-shop inside the lab network.</lable>
 
 ---
 
