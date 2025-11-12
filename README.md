@@ -13,7 +13,7 @@ This project sets up a lightweight, containerized cyber security lab using Docke
 All containers are connected to a custom Docker bridge network called `cyber-lab`, allowing internal communication between services.
 
 ```bash
-    podman network create \  --driver=bridge \  --subnet=10.28.0.0/24 \  --gateway=10.28.0.1 \  cyber-lab
+    podman network create --driver=bridge --subnet=10.28.0.0/24 --gateway=10.28.0.1 cyber-lab
 ```
 ### Verify Cybersecurity Lab Network
 ```bash
@@ -25,9 +25,10 @@ All containers are connected to a custom Docker bridge network called `cyber-lab
 ---
 
 **Note:** 
-*Important safety:
-- Do not expose lab services to your home network unless instructed.
-- Do NOT publish container ports to your home network during coursework.
-- Only attack containers you started yourself.*
+
+*Important safety:*
+- *Do not expose lab services to your home network unless instructed.*
+- *Do NOT publish container ports to your home network during coursework.*
+- *Only attack containers you started yourself.*
 
 *You must read & agree before starting the lab* [Safety-Guidlines](./Lab/Safety-Guidelines.md)
