@@ -32,9 +32,10 @@ Welcome to the lab!
 ```   
 
 **Note:** 
-*Important safety:
-- Do not expose lab services to your home network unless instructed.
-- Do NOT publish container ports to your home network during coursework.
-- Only attack containers you started yourself.*
+
+*Important safety:*
+- *Do not expose lab services to your home network unless instructed.*
+- *Do NOT publish container ports to your home network during coursework.*
+- *Only attack containers you started yourself.*
 
 *You must Read & agree before starting the lab* [Safety-Guidlines](./Safety-Guidelines.md)
